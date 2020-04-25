@@ -57,3 +57,9 @@ DEMO: http://g-t-e.260mb.net
 In the root folder's there is the PDF 'guia.pdf', it is a guide of the use of this web.
 Also in the folder 'instalacion', there is the PDF 'instalacion.pdf', where it explain as lift a Linux server
 and configure the project inside.
+
+The script 'configure' is a executable, that it allows the customization of connection at database and to update of your tables.
+You can execute it with the command ./configure. It has two options.
+
+IMPORTANT: On second script option, is very important the syntax, else it won't replace the string specified.
+Is very important the spaces, before and after of arrow, for that it can replace the text.
