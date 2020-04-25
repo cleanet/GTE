@@ -1,0 +1,63 @@
+#!/bin/bash
+function database_connection(){
+        echo "####################################"
+        echo "           DATA TO REPLACE"
+        echo "####################################"
+	echo ""
+	echo "server: "
+	read -p "To replace: " server1
+	read -p "Replace with: " server2
+        echo "username: "
+        read -p "To replace: " user1
+        read -p "Replace with: " user2
+	echo "password: "
+        read -p "To replace: " password1
+        read -p "Replace with: " password2
+	echo "database: "
+        read -p "To replace: " db1
+        read -p "Replace with: " db2
+	echo "configurating"
+	replace_server="s/\""$server1"\"/\""$server2"\"/g"
+        replace_user="s/\""$user1"\"/\""$user2"\"/g"
+        replace_password="s/\""$password1"\"/\""$password2"\"/g"
+        replace_db="s/\""$db1"\")/\""$db2"\")/g"
+        $(find ./ -iname "*.php" -exec sed -i $replace_db {} + && find ./ -iname "*.php" -exec sed -i $replace_server {} + && find ./ -iname "*.php" -exec sed -i $replace_user {} + && find ./ -iname "*.php" -exec sed -i $replace_password {} +)
+}
+function tables(){
+        echo "####################################"
+        echo "         TABLES TO REPLACE"
+        echo "####################################"
+        echo -e "input example:  [text_to_replace]\033[1;42m \033[0m->\033[1;42m \033[0m[new text]"
+        echo "(without parenthesis [])"
+	echo "command 'quit' for exit"
+        echo ""
+	while true
+	do
+		read -p "> " prompt
+		if [[ $prompt =~ ' -> ' ]];then
+			IFS=" -> " read -ra list <<< $prompt
+			$(find ./ -type f -iname "*.php" -exec sed -i "s/"${list[0]}" /"${list[2]}" /g" {} +)
+			echo -e "\033[1;34m[i]\033[0m ${list[0]} replaced by ${list[2]} successfully"
+		elif [[ $prompt = "quit" ]];then
+			exit
+		else
+			echo -e "\033[1;31m[!]\033[0m Error syntax"
+		fi
+	done
+}
+echo -e "\033[1;31m   ____  \033[1;32m    \033[1;33m _____  \033[1;36m    \033[1;34m _____ "
+echo -e "\033[1;31m  / ___| \033[1;32m    \033[1;33m|_   _| \033[1;36m    \033[1;34m| ____|"
+echo -e "\033[1;31m | |  _  \033[1;32m    \033[1;33m  | |   \033[1;36m    \033[1;34m|  _|  "
+echo -e "\033[1;31m | |_| | \033[1;32m _  \033[1;33m  | |   \033[1;36m _  \033[1;34m| |___ "
+echo -e "\033[1;31m  \____| \033[1;32m(_) \033[1;33m  |_|   \033[1;36m(_) \033[1;34m|_____|"
+echo -e "\033[0m"
+echo "[1] update database's connection"
+echo "[2] rename the query's tables"
+echo ""
+echo -n "Choose >> "
+read choose
+if [ $choose = 1 ];then
+	database_connection
+elif [ $choose = 2 ];then
+	tables
+fi

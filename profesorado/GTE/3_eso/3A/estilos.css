@@ -1,0 +1,827 @@
+*{
+	user-select: none;
+    box-sizing:border-box;
+    margin: 0%;
+    user-select: none;
+}
+/*tablet*/
+	@media screen and (max-width: 768px){
+		/*Eliminar cabecera / header's delete*/
+			#header1{
+				display:none;
+			}
+	    /** footer / pie de pÃ¡gina **/
+	      .enlace_direccion{
+	        color: black;
+	        text-decoration: none;
+	      }
+	      .enlace_direccion font{
+	        bottom:3vmin;
+	        position: absolute;
+	        left:10%;
+	        font-size:4vw;
+	        color: #666666
+	      }
+	      #footer{
+	        width:98vw;
+	        height: 110vw;
+	      }
+	      .gridwrapper #schools_links{
+	        background: #e89797;
+	        display: inline-block;
+	        padding: 20% 26%;
+	        margin: 1%;
+	        font-family: "Segoe Script";
+	        color: white;
+	        border-radius: 10px;
+	        border: 5px dashed white;
+	        font-size: 3vw;
+	      }
+	      .gridwrapper a .mail{
+	      color: skyblue;
+	      position: relative;
+	      bottom: -15%;
+	      font-size: 15vw;
+	      left: 0;
+	     }
+	     .gridwrapper a .telefono{
+	        color: orange;
+	        position: relative;
+	        font-size: 15vw;
+	        bottom: -15%;
+	        left: 20%;
+	     }
+	     .gridwrapper a .fax1{
+	        color: green;
+	        font-size: 15vw;
+	        position: relative;
+	        top: 15%;
+	        left: 42%;
+	     }
+	     .gridwrapper a .equipo{
+	      position: relative;
+	      color: blue;
+	      font-size: 15vw;
+	      bottom: -31%;
+	      left: 7%;
+	     }
+	     .gridwrapper a .descarga{
+	      position: relative;
+	      color: red;
+	      font-size: 15vw;
+	      bottom: -31%;
+	      left: -44%;
+	     }
+	    /** Social bar / barra de redes sociales **/
+	     .social{
+	     	position: fixed;
+	     	top: 93px;
+	     	z-index: 100;
+	     	left:0;
+	     }
+	     .social div a:hover{
+	     	width: 320%!important;
+	     	transition: .5s;
+	     }
+	     .gridwrapper .social div a{
+	      color: white;
+	      font-size: 4vw;
+	      text-align: center;
+	      width: 200%;
+	      height: 0%;
+	      padding: 40% 0% 40% 0%;
+	      display: inline-block;
+	      text-decoration: none;
+	     }
+	     .gridwrapper .otros{
+	       position: fixed;
+	       top: 600px;
+	       z-index: 100;
+	       left: 0;
+	      }
+	     .gridwrapper .otros i{
+	       color: white;
+	       font-size: 5vw;
+	       cursor: pointer;
+	       text-align: center;
+	       width: 200%;
+	       height: 0%;
+	       padding: 30% 0% 30% 0%;
+	       display: inline-block;
+	       text-decoration: none;
+	       background: #b3b3b3;
+	       border-radius: 0 10px 10px 0;
+	       position: relative;
+	      }
+	    /*lapiz separador / separator pencil*/
+			body .contenido .lapiz{
+				display: none;
+			}
+		/*título del grupo / group title's*/
+			body .titulo_1A{
+				font-size: 3vw;
+				color: #666666;
+				font-family: "Segoe Script";
+				text-align: center;
+			}
+		body .container{
+			float:center;
+			position:relative;
+			margin-top:8%;
+		}
+		body #image1{
+			background-image: url(imagenes/calendariodeeventos4.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 58vw;
+			width:70vw;
+			border-radius: 10px;
+			margin: 5px;
+			cursor: pointer;
+			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.4) inset;
+			-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+			margin-left:13%;
+		}
+    body #image2{
+  	  background-image: url(imagenes/actividadesinteractivas2.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 58vw;
+			width:70vw;
+			border-radius: 10px;
+			margin: 5px;
+			cursor: pointer;
+			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.4) inset;
+			-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+			margin-left:13%;    
+    }
+		body #body{
+			height: 155vw;
+		}
+		body .container img{
+		    cursor: pointer;
+		    width: 60%;
+		    float: right;
+		}
+	}
+/*movil / mobile*/
+	@media screen and (max-width: 600px){
+		/* menu fijo horitzontal / Horitzontal menu fixed*/
+		  li a, .dropbtn {
+		      display: inline-block;
+		      color: white;
+		      font-size: 230%;
+		      font-family:segoe script;
+		      text-align: center;
+		      padding: 14px 16px;
+		      text-decoration: none;
+		  }
+		 .submenus {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		     width:204vw;
+		    background-color:#2E9AFE;
+		  }
+		  .dropdown > div {
+		    display: none;
+		    position: absolute;
+		    background-color: #58FAF4;
+		    min-width: 140px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		  }
+		  .menu-fixed .icons a i{
+		     position:relative;
+		     font-size: 40px;
+		  }  
+		  #icons a i{
+		     position:relative;
+		     font-size:40px;
+		  }
+		 .icons a:hover{
+		    color:white;
+		    background-color:#58D3F7;
+		  }
+		  .menu-fixed .submenus{
+		    width: 205vw;
+		  }
+			*{
+			  margin: 0;
+			}
+			#fondo{
+			  background-image: url('/imagenes/stackofmagazines.jpg');
+			  background-size: 500%;
+			  background-position: top left;
+			  background-repeat:no-repeat;
+			}
+		/* Cambiar la altura del pie de pÃ¡gina / footer's height change*/
+			#footer{
+				width:202vw;
+				height:230vh;
+				bottom:-20vw;
+			}
+		/*Cambiar la anchura del cabezado / header's width change*/
+			body #header1{
+				width: 130vw;
+			}
+		body #icons{
+			float: right;
+		}
+	    /** footer / pie de pÃ¡gina **/
+	      #address1{
+	        bottom:5vmin;
+	        position: absolute;
+	        left:5%;
+	        width: 196%;
+	        font-size:16vw;
+	        bottom: 5%;
+	      }
+	      #footer{
+	        width:202vw;
+	        height:230vh;
+	      }
+	      .gridwrapper #schools_links{
+	        background: #e89797;
+	        display: inline-block;
+	        font-size: 20vw;
+	        padding: 20% 26%;
+	        margin: 1%;
+	        font-family: "Segoe Script";
+	        color: white;
+	        border-radius: 10px;
+	        border: 5px dashed white;
+	      }
+	      .gridwrapper a .mail{
+	        color: skyblue;
+	        position: relative;
+	        bottom: -5%;
+	        font-size: 40vw;
+	        left: 1%;  
+	      }
+	      .gridwrapper a .telefono{
+	        color: orange;
+	        position: relative;
+	        font-size: 40vw;
+	        bottom: -5%;
+	        left: 20%;
+	      }
+	      .gridwrapper a .fax1{
+	        color: green;
+	        font-size: 40vw;
+	        position: relative;
+	        top: 3%;
+	        left: 33%;
+	      }
+	      .gridwrapper a .equipo{
+	        position: relative;
+	        color: blue;
+	        font-size: 40vw;
+	        bottom: -20%;
+	        left:-40%;
+	      }
+	      .gridwrapper a .descarga{
+	        position: relative;
+	        color: red;
+	        font-size: 35vw;
+	        bottom: -20%;
+	        left: -20%;
+	      }
+	    /** Barra social vertical / Vertical social bar **/
+	      .gridwrapper .social div a{
+	        color: white;
+	        font-size: 10vw;
+	        text-align: center;
+	        width: 200%;
+	        height: 0%;
+	        padding: 40% 0% 40% 0%;
+	        display: inline-block;
+	        text-decoration: none;
+	      }
+	      .gridwrapper .otros i{
+	        font-size: 13vw;
+	      }
+	     .gridwrapper .otros{
+	       position: fixed;
+	       top: 800px;
+	       z-index: 100;
+	       left: 0;
+	      }
+		body{
+		    background-color: #f3efec;
+		    background-image: url(/imagenes/stackofmagazines.jpg);
+		    background-size: 500%;
+		    background-position: top left;
+		    background-repeat: no-repeat;
+		}
+		body .contenido .lapiz{
+			display: none;
+		}
+		/*botones de opciones de edición / buttons for edition option's*/
+			.container {
+			position: relative;
+			margin-top: 3%;
+			}
+
+			.image {
+			height: 50vw;
+			width: 50vw;
+			border-radius: 10px;
+			margin: 5px;
+			cursor: pointer;
+			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.4) inset;
+			-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+			}
+			#image1{
+			margin-left: 4%;
+			}
+			#image2{
+			margin-left: -4%;
+			}
+			.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%)
+			}
+
+			.container:hover .image {
+			-webkit-filter: brightness(60%) blur(1px);
+			filter: brightness(60%) blur(1px);
+			transition: 700ms;
+			-webkit-transition: 700ms;
+			-moz-transition: 700ms;
+			-o-transition: 700ms;
+			-ms-transition: 700ms;
+			}
+
+			.container:hover .middle {
+			opacity: 1;
+			}
+
+			.text {
+			color: white;
+			font-size: 20px;
+			font-family: segoe script;
+			padding: 16px 32px;
+			cursor: pointer;
+			}
+			#fondo1{
+			background-image: url('imagenes/stackofmagazines.jpg');
+			background-size: 500%;
+			background-position: top left;
+			background-repeat:no-repeat;
+			}
+		/*cuerpo / body*/
+			body #body{
+				width:202vw;
+				height:340vw;
+			}
+		/*modificar las actividades interactivas / modification of the interactive activities (popup)*/
+      		body #popup{
+      			display: none;
+      		}
+      	/*título del grupo / group title's*/
+      		body .titulo_1A{
+      			font-size: 20vw;
+      			color: #666666;
+      			font-family: "Segoe Script";
+      			text-align: center;
+      			position:relative;
+      		}
+      	/*opciones / options*/
+      		body .container{
+      			float:center;
+      			position:relative;
+      			margin-top:8%;
+      		}
+      		body #image1{
+      			background-image: url(imagenes/calendariodeeventos4.jpg);
+      			background-repeat: no-repeat;
+      			background-size: 100%;
+      			height: 125vw;
+      			width:150vw;
+      			border-radius: 10px;
+      			margin: 5px;
+      			cursor: pointer;
+      			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.4) inset;
+      			-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+      			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+      			margin-left:13%;
+      		}
+          body #image2{
+      			background-image: url(imagenes/actividadesinteractivas2.jpg);
+      			background-repeat: no-repeat;
+      			background-size: 100%;
+      			height: 125vw;
+      			width:150vw;
+      			border-radius: 10px;
+      			margin: 5px;
+      			cursor: pointer;
+      			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.4) inset;
+      			-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+      			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+      			margin-left:13%;
+          }
+	}
+/*GTE logo*/
+    .logo_inicio{
+      position: relative;
+      width: 8.33%;
+      margin: 0 0 1% 0;
+    }
+/*Barra de desplazamiento del sitio web / website's scrollbar*/
+	body::-webkit-scrollbar-track
+	{
+	  box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	 background-color: rgb(191,191,191);
+	}
+	body::-webkit-scrollbar
+	{
+	    width: 12px;
+	    background-color: none;
+	    border: none;
+	}
+
+	body::-webkit-scrollbar-thumb
+	{
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	    background-color: orange;
+	}
+/*menu horitzontal fijo / Horitzontal menu fixed*/
+	.submenus {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color:#2E9AFE;
+	}
+	li {
+	    float: left;
+	}
+	li a, .dropbtn {
+	    display: inline-block;
+	    color: white;
+	    font-family:segoe script;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+	li a[class=dropbtn]:hover, .dropdown:hover .dropbtn {
+	    background-color: #58D3F7;
+	    text-decoration:none;
+	    color:white;
+	} 
+
+	li.dropdown {
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #58FAF4;
+	    min-width: 93px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: grey;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.dropdown-content a:hover {background-color: #58D3F7; color:grey;text-decoration:none;}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+	.menu-fixed {
+	    position: fixed;
+	    z-index: 1000;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    max-width: 1000%;
+	    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+	}
+	.menu-fixed ul li a {
+	    padding: 15px 20px;
+	}
+	.icons a i{
+	    position: relative;
+	    font-size: 28px;
+	}
+	.menu > ul > .icons{
+		float: right;
+	}
+	.icons a:hover{
+	  color:white;
+	  background-color:#58D3F7;
+	}
+body{
+    background-image: url('/imagenes/stackofmagazines.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size:cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+body > div{
+	position:absolute;
+	opacity:1;
+	width:auto;
+	left:0%;
+	right:0%;
+}
+body > div #header1{
+	height:11vw;
+}
+body > div #header1 > a{
+	text-decoration: none;
+}
+/** Vertical Social  bar  / barra de redes sociales vertical **/
+  .red{
+    position: fixed;
+    top: 200px;
+    z-index: 100
+    left: 0;
+  }
+  .social div a{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    width: 200%;
+    height: 0%;
+    padding: 30% 0% 30% 0%;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .facebook, .facebook:not(:hover){
+    background: #3b5998;
+    border-radius: 0 1rem 0 0;
+  }
+  .youtube{
+    background: #bb0000;
+  }
+  .googleplus{
+    background: #dd4b39;
+  }
+  .correo{
+    background: #666666;
+  }
+  .telf{
+    background: #FE9A2E;
+  }
+  .volver, .volver_cursos{
+  	background: #b3b3b3;
+  }
+  .volver{
+  	border-radius: 0 0 1rem 0;
+  }
+  .mensaje, .mensaje:not(:hover){
+    background: skyblue;
+  }
+  .social{
+    position: fixed;
+  }
+  .social a:hover{
+    width: 70px;
+    border-radius: 0 1rem 1rem 0;
+    -webkit-transition: 600ms;
+    -o-transition: 600ms;
+    -ms-transition: 600ms;
+  }
+  .social div a:hover{
+    width: 320%;
+  }
+  .social a:not(:hover){
+    width: 70px;
+    -webkit-transition: 600ms;
+    -o-transition: 600ms;
+    -ms-transition: 600ms;
+  }
+  .social div a:not(:hover){
+    width:200%;
+    transition: .5s;
+  }
+  .otros{
+    position: fixed;
+    top: 70%;
+    z-index: 100;
+    left: 0;
+  }
+  .otros i{
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    width: 200%;
+    height: 0%;
+    padding: 30% 0% 30% 0%;
+    display: inline-block;
+    text-decoration: none;
+    background: #b3b3b3;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+  }
+/** footer styles / pie de pÃ¡gina **/
+  .gridwrapper {
+      overflow:auto;
+      position:relative;
+      height:250px;
+  }
+  .gridwrapper .schools_links{
+    background: #e89797;
+    display: inline-block;
+    padding: 5% 26%;
+    margin: 1%;
+    font-family: "Segoe Script";
+    color:white;
+    user-select: none;
+    color: white;
+    border-radius: 10px;
+    border: 5px dashed white;
+  }
+  .gridwrapper .logo_instituto{
+    width: 10%;
+  }
+  .gridwrapper .imagen_ubicacion{
+    width: 16.66%;
+    position: relative;
+    left: 42%;
+    height:7vw;
+  }
+  .gridwrapper .boton_mapa {
+    color: green;
+    font-size: 1.5vw;
+    left: 42.4vw;
+    position: relative;
+    bottom: 2vw;
+    cursor: pointer;
+  }
+  .gridwrapper .boton_satelite{
+    color: blue;
+    font-size: 2vw;
+    position: relative;
+    left: 40.2vw;
+    bottom: 5vw;
+    cursor: pointer;
+  }
+  .gridwrapper .texto_instituto{
+    position: relative;
+    left: 44vw;
+    bottom: 4vw;
+    font-size: 1.5vw;
+  }
+  .gridwrapper .texto_direccion{
+    position: relative;
+    left: 76vw;
+    bottom: 4vw;
+    font-size: 1.5vw;
+  }
+  .gridwrapper .mail{
+    color: skyblue;
+    position: relative;
+    bottom: 30%;
+    font-size: 3vw;
+    left: 4%;
+  }
+  .gridwrapper .telefono{
+    color: orange;
+    position: relative;
+    font-size: 3vw;
+    bottom: 0;
+    left: .7%;
+  }
+  .gridwrapper .fax1{
+    color: green;
+    font-size: 3vw;
+    position: relative;
+    top: 29%;
+    left: -2.6%;
+  }
+  .gridwrapper .equipo{
+    position: relative;
+    color: blue;
+    font-size: 3vw;
+    bottom: 15%;
+    left: 2%;
+  }
+  .gridwrapper .descarga{
+    position: relative;
+    color: #FE2E2E;
+    font-size: 3vw;
+    left: -1%;
+    bottom: -17%;
+  }
+  .gridcontent {
+    width:8.33%;
+    margin:0;
+    border-right:1px solid grey;
+    height:100%;
+    float:left;
+    background-color:#84c754;
+    background-color:#f1f1f1;
+  }
+  body > div:first-child > div > div:nth-child(2)+div{
+    height: 15vw;
+  }
+  body > div:first-child > div > div:nth-child(2)+div > a{
+    text-decoration: none;
+  }
+.gridwrapper {
+    overflow:auto;
+    position:relative;
+    height:250px;
+}
+.gridcontent {
+    width:8.33%;
+    margin:0;
+    border-right:1px solid grey;
+    height:100%;
+    float:left;
+    background-color:#84c754;
+    background-color:#f1f1f1;
+}
+.container {
+	position: relative;
+	margin:2%;
+	display: inline-block;
+	float: left;
+}
+/*opciones de edición / editions options*/
+	.image {
+	  height: 36.8vw;
+	  width: 44vw;
+	  border-radius: 10px;
+	  margin: 5px;
+	  cursor: pointer;
+	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.4) inset;
+	  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+	  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+	}
+	#image1{
+	  margin-left: 4%;
+	  background-image: url(imagenes/calendariodeeventos4.jpg);
+	  background-repeat: no-repeat;
+	  background-size: 100%;
+	}
+	#image2{
+	  margin-left: -4%;
+	  background-image: url(imagenes/actividadesinteractivas2.jpg);
+	  background-repeat: no-repeat;
+	  background-size: 100%;
+	}
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%)
+	}
+	.container:hover .image {
+	  -webkit-filter: brightness(60%) blur(1px);
+	  filter: brightness(60%) blur(1px);
+	  transition: 700ms;
+	  -webkit-transition: 700ms;
+	  -moz-transition: 700ms;
+	  -o-transition: 700ms;
+	  -ms-transition: 700ms;
+	}
+	.container:hover .middle {
+	  opacity: 1;
+	}
+	.text {
+	  color: white;
+	  font-size: 20px;
+	  font-family: segoe script;
+	  padding: 16px 32px;
+	  cursor: pointer;
+	}
+	#body > .container:nth-child(2){
+		float: right;
+	}
+#body{
+	height: 52vw;
+}
+.titulo_1A{
+	font-size: 3vw;
+	color: #666666;
+	text-align: center;
+	font-family: "Segoe script";
+}
