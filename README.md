@@ -20,7 +20,7 @@ Título: Gestión de Tareas Escolares
 Autor: cleanet <cleanet.260mb.net>
 Año: 2020
 
-DEMO: http://g-t-e.260mb.net
+DEMO: https://g-t-e.260mb.net
 
 En la carpeta root está el PDF 'guia.pdf', donde explica el funcionamiento y la utilización del proyecto.
 Y en la carpeta 'instalacion' esta el pdf 'instalacion.pdf' in español, donde explica paso a paso como
@@ -52,7 +52,7 @@ Title: School homeworks management
 Author: cleanet <cleanet.260mb.net>
 Year: 2020
 
-DEMO: http://g-t-e.260mb.net
+DEMO: https://g-t-e.260mb.net
 
 In the root folder's there is the PDF 'guia.pdf', it is a guide of the use of this web.
 Also in the folder 'instalacion', there is the PDF 'instalacion.pdf', where it explain as lift a Linux server
