@@ -1,8 +1,7 @@
 ![GTE logo](/imagenes/logo_GTE.png)
 
 
-## CONTACT
-## Email: cleannet29@gmail.com
+# CONTACT Email: cleannet29@gmail.com
 
 Software con licencia MIT
 
@@ -21,7 +20,7 @@ Título: Gestión de Tareas Escolares
 Autor: cleanet <cleanet.260mb.net>
 Año: 2020
 
-DEMO: https://g-t-e.260mb.net (Debes de aceptar el certficado SSL. El candado amarillo significa que el trafico esta cifrado, por la cual es seguro)
+### DEMO: https://g-t-e.260mb.net (Debes de aceptar el certficado SSL. El candado amarillo significa que el trafico esta cifrado, por la cual es seguro)
 
 En la carpeta root está el PDF 'guia.pdf', donde explica el funcionamiento y la utilización del proyecto.
 Y en la carpeta 'instalacion' esta el pdf 'instalacion.pdf' in español, donde explica paso a paso como
@@ -30,7 +29,7 @@ levantar un servidor Linux y configuar el proyecto en él.
 El script 'configure', es un ejecutable que permite la personalizaciÃ³n de la conexiÃ³n a la base de datos y actualizaciÃ³n de las tablas.
 Ejecutalo con el comando ./configure. TendrÃ¡s dos opciones.
 
-# IMPORTANTE:
+## IMPORTANTE:
 En la segunda opciÃ³n del script, intenta respetar la sintaxis que debes de insertar en el prompt.
 Es muy importante los espacios antes y despuÃ©s de la flecha (->) que debes de aÃ±adir, para que correctamente puedas reemplazar el texto.
 Si no es así, este no lo a reemplazar.
@@ -63,5 +62,6 @@ and configure the project inside.
 The script 'configure' is a executable, that it allows the customization of connection at database and to update of your tables.
 You can execute it with the command ./configure. It has two options.
 
-IMPORTANT: On second script option, is very important the syntax, else it won't replace the string specified.
+## IMPORTANT:
+On second script option, is very important the syntax, else it won't replace the string specified.
 Is very important the spaces, before and after of arrow, for that it can replace the text.
