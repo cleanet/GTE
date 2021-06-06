@@ -30,7 +30,7 @@ levantar un servidor Linux y configuar el proyecto en él.
 El script 'configure', es un ejecutable que permite la personalizaciÃ³n de la conexiÃ³n a la base de datos y actualizaciÃ³n de las tablas.
 Ejecutalo con el comando ./configure. TendrÃ¡s dos opciones.
 
-#IMPORTANTE:
+# IMPORTANTE:
 En la segunda opciÃ³n del script, intenta respetar la sintaxis que debes de insertar en el prompt.
 Es muy importante los espacios antes y despuÃ©s de la flecha (->) que debes de aÃ±adir, para que correctamente puedas reemplazar el texto.
 Si no es así, este no lo a reemplazar.
