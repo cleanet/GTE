@@ -1,10 +1,8 @@
 ![GTE logo](/imagenes/logo_GTE.png)
 
 
-#######################################################
-			CONTACT
-	Email: cleannet29@gmail.com
-#######################################################
+## CONTACT
+## Email: cleannet29@gmail.com
 
 Software con licencia MIT
 
