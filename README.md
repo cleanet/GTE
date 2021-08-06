@@ -1,6 +1,6 @@
 ![GTE logo](/imagenes/logo_GTE.png)
 
-
+![GTE logo](/screenshots/GTE.png)
 # CONTACT
 Autor      | cleanet
 ------------|----------
