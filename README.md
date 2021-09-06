@@ -4,7 +4,7 @@
 # CONTACT
 Autor      | cleanet
 ------------|----------
-Website  |  https://www.cleannet.260mb.net
+Website  |  https://cleanet.alwaysdata.net
 Email      |  cleannet29@gmail.com
 
 Software con licencia MIT
